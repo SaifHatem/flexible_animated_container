@@ -99,3 +99,9 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
+
+## Thanks
+- Thanks to [letsar](https://github.com/letsar) with
+it's [flutter_sticky_header](https://github.com/letsar/flutter_sticky_header) which provide solid foundation and inspire me for this project.
+
+
