@@ -32,6 +32,11 @@ Watch the demo video to see the package in action:
     dependencies:
       flexible_animated_container: ^0.0.1
     ```
+- In your library add the following import:
+
+    ```dart
+    import 'package:flexible_animated_container/flexible_animated_container.dart';
+    ```    
 
 ## Usage
 
