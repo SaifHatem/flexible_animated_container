@@ -92,7 +92,7 @@ class _HomeViewState extends State<HomeView> {
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, index) {
-                return FlexableAnimatedContainer(
+                return FlexibleAnimatedContainer(
                   pictureDescribeText: Text(
                     'Item $index',
                     // Adds ellipsis if the text overflows.
