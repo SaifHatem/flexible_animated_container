@@ -30,7 +30,7 @@ Watch the demo video to see the package in action:
 
     ```yaml
     dependencies:
-      flexible_animated_container: ^0.0.2
+      flexible_animated_container: ^0.0.3
     ```
 - In your library add the following import:
 
