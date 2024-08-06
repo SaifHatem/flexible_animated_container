@@ -16,12 +16,22 @@ only call widget name
 
 ## Features
 
-animated containers
+Animated container supports expansion and collapse with smooth animations and allows you to display text and images inside it.
+
+### Demo Video
+
+Watch the demo video to see the package in action:
+
+[Watch the demo video](https://youtube.com/shorts/MDRjUiyMXVU?si=_n18rUwhZnqzBcKW)
 
 ## Getting started
 
-Easy to use
-only call widget name
+- In the `pubspec.yaml` of your flutter project, add the following dependency:
+
+    ```yaml
+    dependencies:
+      flexible_animated_container: ^0.0.1
+    ```
 
 ## Usage
 
@@ -29,16 +39,58 @@ Easy to use
 only call widget name
 
 ```dart
-Widget build(BuildContext context) {
-    return const Scaffold(
+class HomeView extends StatefulWidget {
+  const HomeView({super.key});
+
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
+  int? expandedIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       body: Center(
-        child: const CustomAnimatedContainer(),
+        child: SizedBox(
+          height: 200,
+          width: double.infinity,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 10, // Adjust itemCount based on your data
+              itemBuilder: (context, index) {
+                return FlexableAnimatedContainer(
+                  pictureDescribeText: Text(
+                    'Item $index',
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(color: Colors.red),
+                  ),
+                  imageProvider: const NetworkImage(
+                    'imageUrl',
+                  ),
+                  isExpanded: expandedIndex == index,
+                  onTap: () {
+                    setState(
+                      () {
+                        expandedIndex = expandedIndex == index ? null : index;
+                      },
+                    );
+                  },
+                  onDoubleTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return const SeconedView();
+                    }));
+                  },
+                );
+              },
+            ),
+          ),
+        ),
       ),
     );
   }
-```
-
-## Additional information
-
-Easy to use
-only call widget name
+}
