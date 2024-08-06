@@ -94,12 +94,12 @@ class _HomeViewState extends State<HomeView> {
               itemBuilder: (context, index) {
                 return FlexableAnimatedContainer(
                   pictureDescribeText: Text(
-                    'Item $index', // Text displayed in the container.
-                    overflow: TextOverflow
-                        .ellipsis, // Adds ellipsis if the text overflows.
+                    'Item $index',
+                    // Adds ellipsis if the text overflows.
+                    overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
-                      color: Colors.amber, // Text color.
-                      fontSize: 20, // Text size.
+                      color: Colors.amber,
+                      fontSize: 20,
                     ),
                   ),
 
@@ -107,8 +107,9 @@ class _HomeViewState extends State<HomeView> {
                   imageProvider: const NetworkImage(
                     'https://img.freepik.com/free-photo/representation-user-experience-interface-design-smartphone_23-2150165977.jpg?t=st=1722952880~exp=1722956480~hmac=e9c5cdd7e4f91dbc6e0f1bcec2c3f2d2c7e29dbdd17957fd7a7384e01fa20759&w=900', // URL for the image (placeholder).
                   ),
-                  isExpanded: expandedIndex ==
-                      index, // Determines if the container is expanded.
+
+                  // Determines if the container is expanded.
+                  isExpanded: expandedIndex == index,
                   onTap: () {
                     setState(
                       () {
