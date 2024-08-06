@@ -101,8 +101,8 @@ class _HomeViewState extends State<HomeView> {
 }
 ```
 
-## Importnt
-- You can use onDOubleTap to make any actions you do as onTap used to expand and collapse container.
+## Important
+- You can use onDoubleTap to make any actions you do as onTap is used to expand and collapse container.
 
 
 ## Thanks
