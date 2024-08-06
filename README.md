@@ -30,7 +30,7 @@ Watch the demo video to see the package in action:
 
     ```yaml
     dependencies:
-      flexible_animated_container: ^0.0.3
+      flexible_animated_container: ^0.0.4
     ```
 - In your library add the following import:
 
@@ -162,7 +162,7 @@ class SeconedView extends StatelessWidget {
 
 ## Thanks
 - Thank you for using the package ❤❤
-- Created by Seif Eldin Hatem Mahmoud
+- Created by Seif Eldin Hatem Mahmoud ❤
 
 
 
