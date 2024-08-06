@@ -162,6 +162,7 @@ class SeconedView extends StatelessWidget {
 
 ## Thanks
 - Thank you for using the package ❤❤
+- Created by Seif Eldin Hatem Mahmoud
 
 
 
