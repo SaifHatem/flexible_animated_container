@@ -36,7 +36,7 @@ Watch the demo video to see the package in action:
 
     ```dart
     import 'package:flexible_animated_container/flexible_animated_container.dart';
-    ```    
+    ```
 
 ## Usage
 
@@ -99,9 +99,16 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
+```
+
+## Importnt
+- You can use onDOubleTap to make any actions you do as onTap used to expand and collapse container.
+
 
 ## Thanks
-- Thanks to [letsar](https://github.com/letsar) with
-it's [flutter_sticky_header](https://github.com/letsar/flutter_sticky_header) which provide solid foundation and inspire me for this project.
+- Thank you for using the package ❤❤
+
+
+
 
 
