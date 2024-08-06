@@ -1,0 +1,22 @@
+name: flexible_animated_container
+description: "A Flutter package that provides a flexible and animated container widget. This widget supports expansion and collapse with smooth animations and allows you to display text and images inside it."
+version: 0.0.1
+homepage: null
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+# The following section is specific to Flutter packages.
+flutter: null
